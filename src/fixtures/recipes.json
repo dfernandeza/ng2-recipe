@@ -1,0 +1,13 @@
+[
+	{
+		"id": "1",
+		"name": "Delicious Angular 2 recipe",
+		"ingredients": ["Webpack", "TypeScript", "ES6", "Bootstrap (Material Design Theme)"]
+	},
+
+	{
+		"id": "2",
+		"name": "Gallo Pinto",
+		"ingredients": ["rice", "beans", "red pepper", "onion", "cilantro", "lizano Sauce"]	
+	}
+]

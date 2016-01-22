@@ -1,0 +1,30 @@
+{
+  "name": "ng2-recipe",
+  "version": "1.0.0",
+  "description": "An opinionated boilerplate for web applications development (Angular 2)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --watch",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --inline --hot --content-base build",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Fernandez A. @dfernandeza",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^0.3.3",
+    "html-webpack-plugin": "^1.7.0",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
