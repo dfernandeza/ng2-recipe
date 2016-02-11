@@ -1,7 +1,17 @@
 # Angular 2 Recipe (ng2-recipe)
 ##### Built with ES6+, Webpack, TypeScript, Bootstrap (Material Design Theme)
 
-An opinionated skeleton project for Angular 2 applications
+I understand that getting started is hard. Thats why I created this jumpstart project, to provide a simple way to get started with Angular 2.
+
+Here you will find examples about:
+
+- Components and subcomponents
+- Form handling (including basic validation)
+- Services (http)
+- Observables (RxJS)
+- Using and creating directives
+- Using and creating pipes 
+- Router configuration
 
 ## Getting Started
 
