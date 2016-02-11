@@ -6,7 +6,7 @@ import { RecipeDetailComponent } from './recipe/recipe-detail.component';
 
 @Component({
 	selector: 'app',
-	styles: [``],
+	styles: [`.jumbotron { min-height: 600px; }`],
 	directives: [ROUTER_DIRECTIVES],
 	template: `<div class="jumbotron">
 					<h1>Angular 2 Example <i class="material-icons">&#xE556;</i></h1>

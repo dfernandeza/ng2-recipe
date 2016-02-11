@@ -10,5 +10,9 @@
 	},
 	"exclude": [
 		"node_modules"
+	],
+	"filesGlob": [
+		"./src/**/*.ts",
+		"!./node_modules/**/*.ts"
 	]
 }

@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class RecipeService {
-	recipes 
+	recipes
 	
 	// This is not JS syntax
 	constructor(private http: Http) {}

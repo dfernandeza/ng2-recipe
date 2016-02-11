@@ -10,10 +10,10 @@ import {RecipeComponent} from '../recipe/recipe.component';
 	],
 	directives: [RecipeComponent],
 	providers: [RecipeService],
-	template: `<div class="">
+	template: `<div>
 					<ul class="list-group">
-						<li class="list-group-item" *ngFor="#recipe of recipes">
-							<recipe [recipe]="recipe"></recipe>
+						<li class="list-group-item" *ngFor="#recipe of recipes trackBy recipe.id">
+							<recipe [recipe]="recipe" (byebyeRecipe)="deleteRecipe($event)"></recipe>
 						</li>
 					</ul>
 
@@ -26,6 +26,9 @@ export class RecipeListComponent {
 	recipe
 	recipes
 	constructor(private recipeService: RecipeService) {
+		// Angular 2 services are not singletons so we will get a new instance of
+		// RecipeService every time we display this component
+
 		this.recipes = [];
 		this.recipe = {
 			name: ''
@@ -39,5 +42,9 @@ export class RecipeListComponent {
 	addRecipe() {
 		this.recipes.push(this.recipe);
 		this.recipe = {};
+	}
+
+	deleteRecipe(rid) {
+		this.recipes = this.recipes.filter(r => r.id !== rid);
 	}
 }
